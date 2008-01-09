@@ -1,0 +1,67 @@
+ocaml-spidercaml
+------------------------------------------
+SpiderMonkey is the historic implementation of Javascript from Netscape, 
+now part of the Mozilla project. SpiderCaml is a library to use 
+SpiderMonkey from OCaml. In other words, it allows OCaml developpers to 
+embed a Javascript interpreter in their applications.
+
+Runtime requirements:
+  cygwin-1.5.25-7
+  libjs-1.60-1
+  ocaml-3.10.0-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.25-7
+  binutils-20060817-1
+  cygport-0.3.8-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  ocaml-findlib-1.2.1-1
+
+Canonical website:
+  http://alain.frisch.fr/soft#spider
+
+Canonical download:
+  http://yquem.inria.fr/~frisch/SpiderCaml/download/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ocaml-spidercaml-0.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ocaml-spidercaml-0.2-X.cygport all
+
+This will create:
+  /usr/src/ocaml-spidercaml-0.2-X-src.tar.bz2
+  /usr/src/ocaml-spidercaml-0.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/ocaml/3.10/spiderCaml/META
+  /usr/lib/ocaml/3.10/spiderCaml/libspiderCaml_stubs.a
+  /usr/lib/ocaml/3.10/spiderCaml/spiderCaml.a
+  /usr/lib/ocaml/3.10/spiderCaml/spiderCaml.cma
+  /usr/lib/ocaml/3.10/spiderCaml/spiderCaml.cmi
+  /usr/lib/ocaml/3.10/spiderCaml/spiderCaml.cmxa
+  /usr/lib/ocaml/3.10/spiderCaml/spiderCaml.mli
+  /usr/lib/ocaml/3.10/stublibs/dllspiderCaml_stubs.so
+  /usr/lib/ocaml/3.10/stublibs/dllspiderCaml_stubs.so.owner
+  /usr/share/doc/ocaml-spidercaml-0.2/Changes
+  /usr/share/doc/ocaml-spidercaml-0.2/LICENSE
+  /usr/share/doc/ocaml-spidercaml-0.2/README
+
+------------------
+
+Port Notes:
+
+----- version 0.2-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

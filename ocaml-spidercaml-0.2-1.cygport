@@ -1,0 +1,12 @@
+ORIG_PN="SpiderCaml"
+inherit ocaml
+
+DESCRIPTION="OCaml SpiderMonkey Javascript bindings"
+HOMEPAGE="http://alain.frisch.fr/soft#spider"
+SRC_URI="http://yquem.inria.fr/~frisch/${ORIG_PN}/download/${ORIG_PN}-${PV}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake -j1 all opt CLIBS="js" CFLAGS="-I/usr/include/js"
+}
