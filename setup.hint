@@ -1,5 +1,5 @@
 category: OCaml
-requires: cygwin libjs ocaml
+requires: libjs ocaml
 sdesc: "OCaml SpiderMonkey Javascript bindings"
 ldesc: "SpiderMonkey is the historic implementation of Javascript from 
 Netscape, now part of the Mozilla project. SpiderCaml is a library to 
